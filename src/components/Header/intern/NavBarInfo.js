@@ -1,7 +1,8 @@
 import React from 'react';
 import {FaHome,FaUserAlt,FaServer,FaWhatsapp} from 'react-icons/fa'
 
-export const MobileHeader =[
+
+export const NavBarInfo =[
     {
         icon:<FaHome/>,
         title:'Home',

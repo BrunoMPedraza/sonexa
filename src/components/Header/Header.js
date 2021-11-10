@@ -1,16 +1,17 @@
 import React,{useState} from 'react'
-import './header.css';
+import {Link} from 'react-router-dom';
 import {FaLowVision,FaBars} from 'react-icons/fa'
 import {IconContext} from 'react-icons'
-import {Link} from 'react-router-dom';
-import {MobileHeader} from './MobileHeader';
+import './header.css';
+
+import {NavBar} from './intern/NavBar';
 
 const Header = () => {
     const [clicked,setClicked] = useState(false);
 
     const showNavBar = () =>{
         setClicked(!clicked);
-        console.log('Clicked: ',clicked)
+        // console.log('Clicked: ',clicked)
     }
 
     return (
@@ -23,28 +24,11 @@ const Header = () => {
             </div>
             <img className={clicked ? 'bg-one-active' : 'bg-one'} src={require('../../images/FirstBG.svg').default} alt="Logo: Woman with cyan background in shield"/>
             
-            <nav className={clicked 
-                ? 'nav-menu active' : 'nav-menu'
-            }>
-
-                <ul className='nav-menu-items' onClick={showNavBar}>
-                    <li className="navbar-toggle">
-                        <Link to="#" className='menu-icons'>
-                            <FaLowVision className='faClose relevantText'/>
-                        </Link>
-                    </li>
-                    {MobileHeader.map((e,index)=>{
-                        return(
-                            <li key={index} className='nav-text'>
-                                <Link to={e.path}>
-                                    <div>{e.icon}</div>
-                                    <h4>{e.title}</h4>
-                                </Link>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </nav>
+            <NavBar 
+            clicked={clicked} 
+            showNavBar={clicked=>showNavBar(clicked)}
+            />
+           
             </IconContext.Provider>
         </header>
     )
