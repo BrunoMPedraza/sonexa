@@ -25,7 +25,7 @@ const Header = () => {
                         <FaBars className={clicked ? 'invisible relevantText transition' : 'faBar relevantText transition'} onClick={showNavBar}/>
                     </Link>
                 </div>
-                <img className={clicked ? 'bg-one-active' : 'bg-one'} src={require('../../images/FirstBG.svg').default} alt="Logo: Woman with cyan background in shield"/>
+                <img className={clicked ? 'bg-one-active' : 'bg-one'} src={require('../../images/FirstBG.svg').default} alt="Background colors"/>
                 
                 <NavBar 
                 clicked={clicked} 
