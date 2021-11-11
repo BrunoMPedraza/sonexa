@@ -1,55 +1,14 @@
 import React from 'react'
+import Separator from '../images/separator.svg'
 
 const Home = () => {
     return (
-        <div className='home'>
-            <h1>Home</h1>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            <p>Hola xd</p>
-            
-        </div>
+        <main class="home">
+            <div class="fContent">
+                <img className='girlOnPc' src={require('../images/illustration/webp.webp').default} alt="Logo: Woman with cyan background in shield"/>
+                <img className='separatorOne'src={Separator} alt="separation line" />
+            </div>
+        </main>
     )
 }
 

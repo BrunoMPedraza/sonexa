@@ -1,11 +1,12 @@
 import React from 'react'
+import {SiDarkreader} from 'react-icons/si'
 
-const Title = () => {
+export const Title = () => {
     return (
-        <div>
-            
+        <div className='zIndex titlePush'>
+            <h1>Sonexa</h1>
+            <h2>| profiles and growth</h2>
+            <SiDarkreader className='darkMode'/>
         </div>
     )
 }
-
-export default Title

@@ -1,49 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
-
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-*{
+*,*::before,*::after{
   box-sizing:border-box;
   margin:0;
   padding:0;
-  font-family:  'Rokkitt', serif;
+  font-family:var(--ff-common)
+}
+
+/* HOME */
+
+.gridContainer{
+  display:grid;
+  width:100vw;
+  height:100vh;
+}
+
+.gridHome{
+  position:absolute;
+  top:0;
+}
+
+
+
+
+.girlOnPc{
+  grid-area:img;
+  width:100%;
+  z-index:-10;
+}
+
+
+.separatorOne{
+  grid-area:img;
+  width:100%;
+}
+
+.fContent{
+  display:flex;
+  width:100%;
+}
+
+/* Test */
+.body-Home{
+  position:relative;
+  top:30vh;
+  display:flex;
+  flex-wrap:wrap;
+}
+.body-Home>*:nth-child(1){
+  flex: 1 1 60%;
+}
+.body-Home>*:nth-child(2){
+  margin-right:0;
+  flex: 1 1 40%;
+  min-height: var(--ps-common);
+}
+
+@media only screen and (min-width: 550px){
+  .body-Home>*:nth-child(1){
+    flex: 1 1 50%;
+  }
+  .body-Home>*:nth-child(2){
+    margin-right:0;
+    flex: 1 1 50%;
+    min-height: var(--ps-device);
+  }
+  .girlOnPc{
+    position:relative;
+    top:10% !important;
+  }
+}
+
+.girlOnPc{
+  position:relative;
+  top:17%;
 }

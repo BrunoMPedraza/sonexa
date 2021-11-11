@@ -8,7 +8,7 @@ export const NavBar = ({clicked,showNavBar}) => {
         <nav className={clicked 
             ? 'nav-menu active' : 'nav-menu'
         }>
-            <ul className='nav-menu-items' onClick={()=>showNavBar(!clicked)}>
+            <ul className='nav-menu-items' onClick={()=>showNavBar()}>
                 <li className="navbar-toggle">
                     <Link to="#" className='menu-icons'>
                         <FaLowVision className='faClose relevantText'/>

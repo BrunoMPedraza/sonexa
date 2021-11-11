@@ -1,20 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 :root{
-  --cake-bg:#DEE8FD;
-  --blue-bg:#455BAF;
-  --cyan-bg:#C6E6F5;
-  --white-bg:rgb(255, 255, 255);
+  --primary-bg:#DEE8FD;
+  --secondary-bg:#455BAF;
+  --text-bg:#C6E6F5;
+  --white-txt:rgb(255, 255, 255);
+  --black-txt:rgb(0, 0, 0);
+
+  /* Fonts */
+  /* Font Family */
+  --ff-common:'Rokkitt', serif;
+  /*Font Size */
+  --fs-title:3rem;
+  --fs-lg: 2.2rem;
+  --fs-sm: 1.2rem;
+  /* Person size */
+  /* These illustrations are based on people, so it makes sense for me to respect a proportion between each other */
+  --ps-common:60%;
+  --ps-device:100%;
+  /* Must fix, this is doing nothing lol */
+}
+@media (min-width: 40em) {
+  :root {
+    --fs-title:7rem;
+    --fs-lg: 3rem;
+    --fs-sm: 2rem;
+  }
 }
