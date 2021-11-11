@@ -38,38 +38,71 @@
   width:100%;
 }
 
-/* Test */
-.body-Home{
+/* Part One */
+  .home-One{
+    position:relative;
+    top:30vh;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .home-One>*:nth-child(1){
+    flex: 1 1 60%;
+  }
+  .home-One>*:nth-child(2){
+    margin-right:0;
+    flex: 1 1 40%;
+    min-height: var(--ps-common);
+  }
+
+  
+  .girlOnPc{
+    position:relative;
+    top:17%;
+  }
+  
+  .phrase{
+    align-self: flex-end;
+    text-align:end;
+    padding:1rem;
+    font-size:var(--fs-sm);
+  }
+
+  @media only screen and (min-width: 550px){
+    .home-One>*:nth-child(1){
+      flex: 1 1 50%;
+    }
+    .home-One>*:nth-child(2){
+      margin-right:0;
+      flex: 1 1 50%;
+      min-height: var(--ps-device);
+    }
+    .girlOnPc{
+      position:relative;
+      top:10% !important;
+    }
+  }
+  /* -------------- */
+  /* Part Two */
+.home-Second{
   position:relative;
   top:30vh;
   display:flex;
   flex-wrap:wrap;
 }
-.body-Home>*:nth-child(1){
+.home-Second>*:nth-child(1){
   flex: 1 1 60%;
 }
-.body-Home>*:nth-child(2){
+.home-Second>*:nth-child(2){
   margin-right:0;
   flex: 1 1 40%;
   min-height: var(--ps-common);
 }
-
-@media only screen and (min-width: 550px){
-  .body-Home>*:nth-child(1){
-    flex: 1 1 50%;
-  }
-  .body-Home>*:nth-child(2){
-    margin-right:0;
-    flex: 1 1 50%;
-    min-height: var(--ps-device);
-  }
-  .girlOnPc{
-    position:relative;
-    top:10% !important;
-  }
-}
-
-.girlOnPc{
+.businessPpl{
+  width:100%;
   position:relative;
   top:17%;
+}
+
+.longTxt{
+  font-size:var(--fs-sm)
 }

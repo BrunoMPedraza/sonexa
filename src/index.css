@@ -21,7 +21,7 @@ body {
   /*Font Size */
   --fs-title:3rem;
   --fs-lg: 2.2rem;
-  --fs-sm: 1.2rem;
+  --fs-sm: 1rem;
   /* Person size */
   /* These illustrations are based on people, so it makes sense for me to respect a proportion between each other */
   --ps-common:60%;
@@ -32,6 +32,6 @@ body {
   :root {
     --fs-title:7rem;
     --fs-lg: 3rem;
-    --fs-sm: 2rem;
+    --fs-sm: 1.5rem;
   }
 }
