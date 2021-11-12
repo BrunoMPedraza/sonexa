@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Clients from './pages/Clients'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
+import Fetch from './components/Fetch';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/services" element={<Services/>}/>
         </Routes>
+        {/* <Fetch/> */}
     </>
   );
 }

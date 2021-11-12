@@ -1,0 +1,54 @@
+.adjustable{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.adjustable>*{
+    flex:1 1 10em;
+
+}
+
+.adjustable aside{
+    padding:1rem;
+    font-size:var(--fs-sm)
+}
+
+.adjustable aside h2{
+    font-size:var(--fs-lg)
+}
+
+.box{
+    width:100vw;
+    background-color:var(--secondary-bg);
+    position:absolute;
+    top:50%;
+    z-index:1;
+}
+
+.textRectangle{
+    margin:1rem;
+    height:80%;
+    border-radius:1rem;
+    font-size:var(--fs-sm);
+    background-color:var(--text-bg);
+}
+
+.whitePart{
+    margin:0.3rem;
+    border-radius:1rem;
+    background-color:var(--white-txt);
+    width:95%;
+    height: 50ch;
+    
+    overflow-y:scroll !important;
+}
+
+.whitePart h2{
+    overflow-x:scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:var(--fs-lg)
+}
+
+

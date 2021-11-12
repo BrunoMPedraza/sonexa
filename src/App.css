@@ -6,114 +6,106 @@
 }
 
 /* HOME */
-
-.gridContainer{
-  display:grid;
-  width:100vw;
-  height:100vh;
-}
-
-.gridHome{
-  position:absolute;
-  top:0;
-}
-
-
-
-
-.girlOnPc{
-  grid-area:img;
-  width:100%;
-  z-index:-10;
-}
-
-
-.separatorOne{
-  grid-area:img;
-  width:100%;
-}
-
-.fContent{
-  display:flex;
-  width:100%;
-}
-
-/* Part One */
-  .home-One{
+  .person{
+    width:100%;
+    z-index:-10;
+  }
+  .separatorOne{
+    width:100%;
+  }
+  .fContent{
+    display:flex;
+    width:100%;
+  }
+  /* Part One */
+    .home-One{
+      position:relative;
+      top:30vh;
+      display:flex;
+      flex-wrap:wrap;
+    }
+    .home-One>*:nth-child(1){
+      flex: 1 1 60%;
+    }
+    .home-One>*:nth-child(2){
+      margin-right:0;
+      flex: 1 1 40%;
+      min-height: var(--ps-common);
+    }
+    .girlOnPc{
+      position:relative;
+      top:17%;
+    }
+    .phrase{
+      align-self: flex-end;
+      text-align:end;
+      padding:1rem;
+      font-size:var(--fs-sm);
+    }
+    .slogan{
+      margin-bottom:4%;
+      z-index:-65;
+    }
+    @media only screen and (min-width: 550px){
+      .home-One>*:nth-child(1){
+        flex: 1 1 50%;
+      }
+      .home-One>*:nth-child(2){
+        margin-right:0;
+        flex: 1 1 50%;
+        min-height: var(--ps-device);
+      }
+      .girlOnPc{
+        position:relative;
+        top:10% !important;
+      }
+      .slogan{
+        margin-bottom:15%;
+        z-index:10;
+      }
+    }
+  /* -------------- */
+  /* Part Two */
+  .home-Second{
     position:relative;
     top:30vh;
     display:flex;
     flex-wrap:wrap;
   }
-  .home-One>*:nth-child(1){
+  .home-Second>*:nth-child(1){
     flex: 1 1 60%;
   }
-  .home-One>*:nth-child(2){
+  .home-Second>*:nth-child(2){
     margin-right:0;
     flex: 1 1 40%;
     min-height: var(--ps-common);
   }
 
-  
-  .girlOnPc{
+  .secondTxt{
+    margin-bottom:45%;
+  }
+
+  .businessPpl{
+    z-index:-6;
+    width:100%;
     position:relative;
-    top:17%;
   }
-  
-  .phrase{
-    align-self: flex-end;
-    text-align:end;
-    padding:1rem;
-    font-size:var(--fs-sm);
+  .bg-two{
+    bottom:0;
+    position:absolute;
+    width:100vw;
+    z-index:-5;
   }
+/* ------------------ */
 
-  .slogan{
-    margin-bottom:15%;
-  }
-
-  @media only screen and (min-width: 550px){
-    .home-One>*:nth-child(1){
-      flex: 1 1 50%;
-    }
-    .home-One>*:nth-child(2){
-      margin-right:0;
-      flex: 1 1 50%;
-      min-height: var(--ps-device);
-    }
-    .girlOnPc{
-      position:relative;
-      top:10% !important;
-    }
-  }
-  /* -------------- */
-  /* Part Two */
-.home-Second{
-  position:relative;
-  top:30vh;
-  display:flex;
-  flex-wrap:wrap;
-}
-.home-Second>*:nth-child(1){
-  flex: 1 1 60%;
-}
-.home-Second>*:nth-child(2){
-  margin-right:0;
-  flex: 1 1 40%;
-  min-height: var(--ps-common);
-}
-
-.secondTxt{
-  margin-bottom:45%;
-}
-
-.businessPpl{
-  z-index:-6;
-  width:100%;
-  position:relative;
-}
-.bg-two{
-  bottom:0;
-  position:absolute;
+/* Clients */
+.clients{
   width:100vw;
-  z-index:-5;
+  height:60%;
+  background-color:var(--secondary-bg);
 }
+
+.textWhite{
+  color:var(--white-txt);
+}
+/* ---------------- */
