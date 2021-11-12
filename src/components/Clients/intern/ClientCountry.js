@@ -8,15 +8,15 @@ const ClientCountry = ({ id, userId }) => {
         console.log(foo)
         switch (foo) {
             case 1:
-                return 'Argentina';
+                return 'https://cdn-icons-png.flaticon.com/512/197/197573.png';
             case 2:
-                return 'Peru';
+                return 'https://cdn-icons-png.flaticon.com/512/197/197563.png';
             case 3:
-                return 'Brasil';
+                return 'https://cdn-icons-png.flaticon.com/512/197/197386.png';
             case 4:
-                return 'Colombia'
+                return 'https://cdn-icons-png.flaticon.com/512/197/197622.png'
             case 5:
-                return 'Chile'
+                return 'https://cdn-icons-png.flaticon.com/512/197/197504.png'
             case 6:
                 return 'Venezuela'
             case 7:
