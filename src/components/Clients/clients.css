@@ -27,6 +27,7 @@
 
 .textRectangle{
     margin:1rem;
+    
     height:80%;
     border-radius:1rem;
     font-size:var(--fs-sm);
@@ -35,20 +36,30 @@
 
 .whitePart{
     margin:0.3rem;
+    
     border-radius:1rem;
     background-color:var(--white-txt);
     width:95%;
-    height: 50ch;
+    height: 85%;
     
     overflow-y:scroll !important;
 }
 
 .whitePart h2{
+    white-space: nowrap;
+    max-width:15ch;
     overflow-x:scroll;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* must fix */
     font-size:var(--fs-lg)
 }
 
+.innerText h4{
+    padding:1rem;
+}
 
+.arrow{
+    font-size:var(--fs-lg)
+}

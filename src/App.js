@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header'
 import React,{useState,useEffect} from 'react';
-import {BrowserRouter,Route,Routes} from 'react-router-dom';
+import {Route,Routes} from 'react-router-dom';
 import Home from './pages/Home';
 import Clients from './pages/Clients'
 import Contact from './pages/Contact'
