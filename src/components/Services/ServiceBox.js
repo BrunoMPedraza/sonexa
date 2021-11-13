@@ -6,7 +6,7 @@ import {ServiceIteration} from './intern/ServiceIteration'
 
 const ServiceBox = () => {
     return (
-        <>
+        <section>
             <div className="home-One separator">
                 <div className="col"></div>            
             </div>
@@ -20,7 +20,7 @@ const ServiceBox = () => {
                 <ServiceIteration />
             </ServiceProvider>
        
-        </>
+        </section>
     )
 }
 

@@ -27,7 +27,7 @@ export const ServiceProvider = (props) => {
           } 
         }
         fetchData()
-    }, [])
+    }, [sIndex])
     
 
 

@@ -10,10 +10,28 @@
 }
 
 .serviceList{
+    background-color:var(--secondary-bg);
+    padding:0.4rem;
+    margin:auto;
+    border:1px solid black;
     position:relative;
-    z-index:9999;
+    
+
 }
 
 .thumbnail{
+    border:1px solid black; 
     width:15%;
 }
+
+.right{
+    text-align:end;
+}
+
+.card{
+    background-color:var(--white-txt);
+    padding:.3rem;
+    border-radius:.2rem;
+}
+
+
