@@ -124,9 +124,9 @@ h4{
 
 }
 
-
 h1{
     font-size: var(--fs-title);
+    letter-spacing:.2rem;
 }
 h2{
     font-size: var(--fs-sm);

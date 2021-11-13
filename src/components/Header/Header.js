@@ -5,14 +5,13 @@ import {IconContext} from 'react-icons'
 import './header.css';
 
 import {NavBar} from './intern/NavBar';
-import {Title} from './intern/Title'
+import {Title} from './Title'
 
 const Header = () => {
     const [clicked,setClicked] = useState(false);
 
     const showNavBar = () =>{
         setClicked(!clicked);
-        // console.log('Clicked: ',clicked)
     }
 
     return (
