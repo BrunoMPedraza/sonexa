@@ -1,25 +1,43 @@
-import React,{useEffect,useState} from 'react'
+// import React,{useEffect,useState,useContext} from 'react'
 
-const Fetch = () => {
-    const [data,setData]= useState([]);
+// const Fetch = ({param}) => {
+//     const {array,index,loader} = useContext(ClientContext)
+//     const [clients,setClients] = array;
+//     const [cIndex,setCIndex] = index;
+//     const [loading,setLoading] = loader;
 
-    const getData = async(param) =>{
-        const data = await fetch(`https://jsonplaceholder.typicode.com/${param}`)
-        const res = await data.json();
-        console.log(res);
-        setData(res);
-    }
+//     const handleError = (res) =>{
+//         if (res.status >= 200 && res.status <= 299) {
+//           return res.json();
+//         } else {
+//           throw Error(res.statusText);
+//         }
+//     }
 
-    useEffect(()=>{
-        getData("posts")
-        // console.log('One deploy')
-        console.log('asdasd',data);
-    },[])
-    return (
-        <ul>
-         
-        </ul>
-    )
-}
 
-export default Fetch
+//     const assignSet = ()=>{
+//         if(param==='posts'){
+            
+//         }   
+//     }
+//     useEffect(() => {
+//         const fetchData = async () => {
+//           try {
+//            const result = await fetch(`https://jsonplaceholder.typicode.com/${param}`);
+//            const data = await handleError(result)
+//            setService(data);
+//            setTimeout(()=>{
+//             setLoading(false);
+//            },4000)
+//           } catch(err) {
+//             console.warn('An error has ocurred during Fetch: ',err);
+//           } 
+//         }
+//         fetchData()
+//     }, [])
+ 
+
+
+// }
+
+// export default Fetch

@@ -1,6 +1,8 @@
 import Reac,{useState,useContext} from 'react'
 import { ClientContext } from './ClientContext'
 import ClientMessage from './ClientMessage'
+import Loader from 'react-loader-spinner'
+
 
 const ClientIteration = () => {
     const {array,index,loader} = useContext(ClientContext)
@@ -11,7 +13,18 @@ const ClientIteration = () => {
     console.log('Prueba',clients[cIndex]);
     return (
         <div>
-           {loading ? 'Cargando' : <ClientMessage 
+           {loading ? 
+           <Loader
+           className='spinner'
+           type="TailSpin"
+           color="#fafafa"
+           height={100}
+           width={100}
+           timeout={3000}
+           />
+           
+           : 
+           <ClientMessage 
             id={clients[cIndex].id} 
             userId={clients[cIndex].userId}
             body={clients[cIndex].body}

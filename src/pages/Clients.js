@@ -7,7 +7,7 @@ const Clients = () => {
     return (
         <section>
             <ClientBox/>   
-            asdasd     
+            
         </section>
     )
 }

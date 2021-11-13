@@ -35,3 +35,18 @@ body {
     --fs-sm: 2rem;
   }
 }
+
+
+.spinner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  top:20%;
+  height: inherit;
+}
+
+.separator{
+  height:25vh;
+  pointer-events: none;
+}

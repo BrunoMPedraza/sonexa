@@ -1,5 +1,6 @@
 import React,{useState,useContext} from 'react'
 import {AiOutlineArrowLeft,AiOutlineArrowRight} from 'react-icons/ai'
+import { FaList } from 'react-icons/fa'
 import { ClientContext } from './ClientContext'
 
 const ClientMessage = ({title,body,id}) => {
@@ -22,7 +23,8 @@ const ClientMessage = ({title,body,id}) => {
         setCIndex(validateId(cIndex+op))
     }
     return (
-        <section className='textRectangle'>
+        // This was suppoused to go on a list but I took the creative freedom to change it, I hope its ok too
+        <section className='textRectangle fade'>
             <AiOutlineArrowLeft className='arrow' onClick={(e)=>changeId(e,-1)} />
             <AiOutlineArrowRight className='arrow' onClick={(e)=>changeId(e,1)} />
             <div className="whitePart">

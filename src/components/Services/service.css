@@ -1,0 +1,11 @@
+.serviceSlogan{
+    font-size:var(--fs-title);
+    position:relative;
+    top:3em;
+    text-align: end;
+    padding-right:10%;
+    background-color: var(--secondary-bg);
+    color:var(--white-txt);
+    z-index:-10;
+}
+

@@ -1,10 +1,10 @@
 import React,{useState,createContext,useEffect} from 'react'
-export const ClientContext = createContext();
+export const ServiceContext = createContext();
 
-export const ClientProvider = (props) => {
+export const ServiceProvider = (props) => {
     const [loading, setLoading] = useState(true);
-    const [client,setClient] = useState({});
-    const [cIndex,setCIndex] = useState(0);
+    const [service,setService] = useState({});
+    const [sIndex,setSIndex] = useState(0);
     const handleError = (res) =>{
         if (res.status >= 200 && res.status <= 299) {
           return res.json();
@@ -16,12 +16,11 @@ export const ClientProvider = (props) => {
     useEffect(() => {
         const fetchData = async () => {
           try {
-           const result = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+           const result = await fetch(`https://jsonplaceholder.typicode.com/photos`);
            const data = await handleError(result)
-           setClient(data);
+           setService(data);
            setTimeout(()=>{
-
-               setLoading(false);
+            setLoading(false);
            },4000)
           } catch(err) {
             console.warn('An error has ocurred during Fetch: ',err);
@@ -33,9 +32,9 @@ export const ClientProvider = (props) => {
 
 
     return (
-        <ClientContext.Provider value={{array:[client,setClient],index:[cIndex,setCIndex],loader:[loading,setLoading]}}>
+        <ServiceContext.Provider value={{sArray:[service,setService],index:[sIndex,setSIndex],loader:[loading,setLoading]}}>
             {props.children}
-        </ClientContext.Provider>
+        </ServiceContext.Provider>
     )
 }
 
