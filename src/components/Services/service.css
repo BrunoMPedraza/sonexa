@@ -14,9 +14,14 @@
     padding:0.4rem;
     margin:auto;
     border:1px solid black;
-    position:relative;
-    
 
+}
+
+.listCollection{
+    background-color:var(--primary-bg);
+    position:relative;
+    margin-top:15em;
+    z-index:1;
 }
 
 .thumbnail{

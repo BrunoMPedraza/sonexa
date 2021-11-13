@@ -17,7 +17,9 @@ const ServiceBox = () => {
 
             
             <ServiceProvider>
-                <ServiceIteration />
+                <section className="listCollection">
+                    <ServiceIteration />
+                </section>
             </ServiceProvider>
        
         </section>

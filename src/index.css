@@ -50,3 +50,19 @@ body {
   height:25vh;
   pointer-events: none;
 }
+
+.error{
+  position:absolute;
+  top:25em;
+  right:12.5vw;
+  z-index:-15;
+  width:75vw;
+
+}
+
+.chickens{
+  position:absolute;
+  right:0;
+  margin-right:5rem;
+  top:45%;
+}
