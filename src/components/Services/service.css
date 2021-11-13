@@ -9,3 +9,11 @@
     z-index:-10;
 }
 
+.serviceList{
+    position:relative;
+    z-index:9999;
+}
+
+.thumbnail{
+    width:15%;
+}

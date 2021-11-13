@@ -2,7 +2,7 @@ import Reac,{useState,useContext} from 'react'
 import Loader from 'react-loader-spinner'
 import { ServiceContext } from './ServiceContext';
 import SingleService from '../SingleService';
-
+import { ServiceList } from './ServiceList';
 
 export const ServiceIteration = () => {
     const {sArray,index,loader} = useContext(ServiceContext)
@@ -24,13 +24,7 @@ export const ServiceIteration = () => {
            />
            
            : 
-           <SingleService 
-            id={services[sIndex].id} 
-            albumId={services[sIndex].albumId}
-            url={services[sIndex].url}
-            thumbnailUrl={services[sIndex].thumbnailUrl}
-            title={services[sIndex].title}
-            />
+           (<ServiceList/>)
             
             }
         </div>

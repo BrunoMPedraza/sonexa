@@ -1,34 +1,14 @@
 import React,{useContext,useState} from 'react'
-import { ServiceContext } from './intern/ServiceContext';
 
 
-const SingleService = () => {
-    const {sArray,index,loader} = useContext(ServiceContext)
-    const [services,setServices] = sArray;
-    const [sIndex,setSIndex] = index;
-    const [loading,setLoading] = loader;
 
-
-    const validateId = (sum) =>{
-        return services[sum] === undefined 
-        ? sum>0 
-        ? 0 
-        : services.length-1
-        : sum
-    }
-    
-    const changeId = (e,op) =>{
-        e.preventDefault();
-        // This should be modularized
-        setSIndex(validateId(sIndex+op))
-    }
-
-
+const SingleService = ({id,url,thumbnailUrl,title}) => {
 
     return (
-        <div>
-            
-        </div>
+        <li key={id} class="serviceList">
+            <h2>{title}</h2>
+            <img className='thumbnail' src={thumbnailUrl}/>
+        </li>
     )
 }
 

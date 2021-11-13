@@ -16,12 +16,12 @@ export const ServiceProvider = (props) => {
     useEffect(() => {
         const fetchData = async () => {
           try {
-           const result = await fetch(`https://jsonplaceholder.typicode.com/photos`);
+           const result = await fetch(`https://jsonplaceholder.typicode.com/photos?_start=${sIndex}&_limit=10`);
            const data = await handleError(result)
            setService(data);
            setTimeout(()=>{
             setLoading(false);
-           },4000)
+           },1000)
           } catch(err) {
             console.warn('An error has ocurred during Fetch: ',err);
           } 
