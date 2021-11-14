@@ -1,3 +1,10 @@
+.servicePush{
+    position:absolute;
+    top:35%;
+}
+
+
+
 .serviceSlogan{
     font-size:var(--fs-title);
     position:relative;

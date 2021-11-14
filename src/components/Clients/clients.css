@@ -69,3 +69,14 @@
 .arrow{
     font-size:var(--fs-lg)
 }
+
+
+.clients{
+    width:100vw;
+    height:60%;
+    background-color:var(--secondary-bg);
+  }
+  
+  .textWhite{
+    color:var(--white-txt);
+  }

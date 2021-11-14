@@ -1,6 +1,5 @@
 import React from 'react'
 import './clients.css';
-import Fetch from '../Fetch';
 import { ClientProvider,ClientContext } from './intern/ClientContext';
 import ClientIteration from './intern/ClientIteration';
 
@@ -32,7 +31,6 @@ const ClientBox = () => {
 
             
 
-            {/* <Fetch /> */}
         </section>
 
     )

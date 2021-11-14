@@ -3,7 +3,7 @@ import ServiceBox from '../components/Services/ServiceBox'
 
 const Services = () => {
     return (
-        <section>
+        <section className='servicePush'>
             <ServiceBox/>
         </section>
     )

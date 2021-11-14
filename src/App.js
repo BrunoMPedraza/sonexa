@@ -7,7 +7,6 @@ import Clients from './pages/Clients'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
 import Error404 from './pages/Error404';
-import Fetch from './components/Fetch';
 
 
 function App() {
@@ -28,7 +27,6 @@ function App() {
           <Route path="/services" element={<Services/>}/>
           <Route path="*" element={<Error404/>}/>
         </Routes>
-        {/* <Fetch/> */}
     </>
   );
 }

@@ -14,9 +14,8 @@ const Header = () => {
     const [clicked,setClicked] = useState(false);
 
     const showNavBar = () => {
-        const title = document.getElementById('title');
         setClicked(!clicked);
-        title.style.setProperty('margin-left', clicked ? '15%' : '25%');
+        // title.style.setProperty('margin-left', clicked ? '15%' : '25%');
     }
 
     return (
