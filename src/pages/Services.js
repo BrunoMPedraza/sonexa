@@ -1,20 +1,11 @@
 import React from 'react'
+import ServiceBox from '../components/Services/ServiceBox'
 
 const Services = () => {
     return (
-        <div>
-            Services
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-            <p>a</p>
-        </div>
+        <section className='servicePush'>
+            <ServiceBox/>
+        </section>
     )
 }
 

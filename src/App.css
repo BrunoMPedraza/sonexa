@@ -5,6 +5,19 @@
   font-family:var(--ff-common)
 }
 
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--secondary-bg);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--black-txt);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--white-txt);  /* creates padding around scroll thumb */
+}
 /* HOME */
   .person{
     width:100%;
@@ -23,6 +36,7 @@
       top:30vh;
       display:flex;
       flex-wrap:wrap;
+      color: var(--black-txt);
     }
     .home-One>*:nth-child(1){
       flex: 1 1 60%;
@@ -43,6 +57,7 @@
       font-size:var(--fs-sm);
     }
     .slogan{
+      color: var(--black-txt);
       margin-bottom:4%;
       z-index:-65;
     }
@@ -60,6 +75,7 @@
         top:10% !important;
       }
       .slogan{
+        
         margin-bottom:15%;
         z-index:10;
       }
@@ -67,6 +83,7 @@
   /* -------------- */
   /* Part Two */
   .home-Second{
+    color: var(--black-txt);
     position:relative;
     top:30vh;
     display:flex;
@@ -86,26 +103,31 @@
   }
 
   .businessPpl{
-    z-index:-6;
+    z-index:-15;
     width:100%;
     position:relative;
   }
   .bg-two{
+    transition:.2s;
+    filter:brightness(var(--svg-filter));
     bottom:0;
     position:absolute;
-    width:100vw;
+    width:100%;
     z-index:-5;
   }
-/* ------------------ */
 
-/* Clients */
-.clients{
-  width:100vw;
-  height:60%;
-  background-color:var(--secondary-bg);
+
+.whatsapp{
+  position:absolute;
+  left:25%;
+  top:50%;
+  width:50%;
 }
 
-.textWhite{
-  color:var(--white-txt);
+.contact{
+  position:absolute;
+  left:25%;
+  top:50%;
+  width:50%;
+  color:var(--black-txt);
 }
-/* ---------------- */

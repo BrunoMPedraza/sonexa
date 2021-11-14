@@ -5,15 +5,18 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:var(--global-bg);
 }
 
 
 :root{
+  --global-bg:white;
   --primary-bg:#DEE8FD;
   --secondary-bg:#455BAF;
   --text-bg:#C6E6F5;
   --white-txt:rgb(255, 255, 255);
   --black-txt:rgb(0, 0, 0);
+  --svg-filter:1;
 
   /* Fonts */
   /* Font Family */
@@ -21,6 +24,7 @@ body {
   /*Font Size */
   --fs-title:3rem;
   --fs-lg: 2.2rem;
+  --fs-md: 1.25rem;
   --fs-sm: .8rem;
   /* Person size */
   /* These illustrations are based on people, so it makes sense for me to respect a proportion between each other */
@@ -32,6 +36,43 @@ body {
   :root {
     --fs-title:7rem;
     --fs-lg: 3rem;
+    --fs-md: 2.8rem;
+    --fs-smp: 2.3rem;
     --fs-sm: 2rem;
+    --fs-xsm: 1.25rem;
   }
 }
+
+
+.spinner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  top:20%;
+  height: inherit;
+}
+
+.separator{
+  height:25vh;
+  pointer-events: none;
+}
+
+/* This is bad */
+
+  .error{
+    position:absolute;
+    top:25em;
+    right:12.5vw;
+    z-index:-15;
+    width:75vw;
+  }
+
+  .chickens{
+    position:absolute;
+    right:0;
+    margin-right:5rem;
+    top:45%;
+  }
+
+/* ----------- */
