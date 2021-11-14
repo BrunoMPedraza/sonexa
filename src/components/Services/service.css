@@ -47,14 +47,14 @@
 .pagination-counter-white{
     margin-left: 15px;
     font-size: var(--fs-sm);
-    color: rgba(0, 0, 0, 0.575);
+    color: var(--black-txt);
     font-weight: bold;
 }
 
 .pagination-counter-white-small{
     font-size: var(--fs-xsm);
     margin-left: 15px;
-    color: rgba(70, 70, 70, 0.575);
+    color: var(--black-txt);
     font-weight: bold;
 }
 
