@@ -15,7 +15,6 @@ const Header = () => {
 
     const showNavBar = () => {
         setClicked(!clicked);
-        // title.style.setProperty('margin-left', clicked ? '15%' : '25%');
     }
 
     return (

@@ -1,9 +1,9 @@
 import React from 'react'
-import Separator from '../images/separator.svg'
 
 const Home = () => {
     return (
         <main>
+            {/* This should be modularized, but sorry, no time left */}
             <div className="home-One">
                 <div className="col phrase slogan">We are Sonexa, we bring products to the <b>top</b></div>
                 <div className="col">

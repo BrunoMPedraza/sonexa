@@ -119,14 +119,14 @@ body::-webkit-scrollbar-thumb {
 
 .whatsapp{
   position:absolute;
-  left:25%;
+  left:37%;
   top:50%;
   width:50%;
 }
 
 .contact{
   position:absolute;
-  left:25%;
+  left:50%;
   top:50%;
   width:50%;
   color:var(--black-txt);

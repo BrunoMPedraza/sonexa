@@ -1,6 +1,6 @@
 import React from 'react'
 import './clients.css';
-import { ClientProvider,ClientContext } from './intern/ClientContext';
+import { ClientProvider } from './intern/ClientContext';
 import ClientIteration from './intern/ClientIteration';
 
 const ClientBox = () => {

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { ServiceContext } from './ServiceContext';
 import SingleService from '../ServiceSingle';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
@@ -7,7 +7,6 @@ export const ServiceList = () => {
     const { sArray, index, loader } = useContext(ServiceContext)
     const [services, setServices] = sArray;
     const [sIndex, setSIndex] = index;
-    const [loading, setLoading] = loader;
     const paginationSize = 10;
 
     const changePagination = (e, op) => {
@@ -44,7 +43,7 @@ export const ServiceList = () => {
                 />
 
                 <div className='pagination-counter-white'>{sIndex} - {sIndex + paginationSize > services.length ? services.length : sIndex + paginationSize}</div>
-                <div className='pagination-counter-white-small'>{services.length}</div>
+                <div className='pagination-counter-white-small'>out of {services.length}</div>
             </div>
             <ul>
                 {mapService(services, sIndex).map(item => {

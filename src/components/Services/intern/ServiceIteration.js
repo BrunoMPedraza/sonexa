@@ -4,9 +4,7 @@ import { ServiceContext } from './ServiceContext';
 import { ServiceList } from './ServiceList';
 
 export const ServiceIteration = () => {
-    const {sArray,index,loader} = useContext(ServiceContext)
-    const [services,setServices] = sArray;
-    const [sIndex,setSIndex] = index;
+    const {loader} = useContext(ServiceContext)
     const [loading,setLoading] = loader;
 
     return (

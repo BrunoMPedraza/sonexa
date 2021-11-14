@@ -1,6 +1,5 @@
 import React,{useState,useContext} from 'react'
 import {AiOutlineArrowLeft,AiOutlineArrowRight} from 'react-icons/ai'
-import { FaList } from 'react-icons/fa'
 import { ClientContext } from './ClientContext'
 
 const ClientMessage = ({title,body,id}) => {
@@ -21,12 +20,9 @@ const ClientMessage = ({title,body,id}) => {
     
     const changeId = (e,op) =>{
         e.preventDefault();
-        // console.log('last id:', cIndex, 'new id: ',cIndex+op)
         setCIndex(validateId(cIndex+op))
     }
     return (
-        // This was suppoused to go on a list but I took the creative freedom to change it, 
-        // I hope its ok too, I enlisted services
         <section className='textRectangle fade'>
             <AiOutlineArrowLeft className='arrow' onClick={(e)=>changeId(e,-1)} />
             <AiOutlineArrowRight className='arrow' onClick={(e)=>changeId(e,1)} />
