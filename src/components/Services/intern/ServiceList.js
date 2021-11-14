@@ -8,16 +8,26 @@ export const ServiceList = () => {
     const [services,setServices] = sArray;
     const[sIndex,setSIndex] = index;
     const [loading,setLoading] = loader;
+
+    const validateId = (sum) =>{
+        console.log('services: ',sIndex)
+        return services[sum] === undefined ? 
+        sum>0 ? 0 : services.length-10
+        : sum
+    }
     
     const changePagination = (e,op) =>{
         e.preventDefault();
-        setSIndex(sIndex+op)
+        console.log('previous: ',sIndex,'next: ',sIndex+op);
+        validateId(setSIndex((sIndex+op)))
     }
+
+    // FIX ASAP!!
 
     return (
         <ul>    
-            <AiOutlineArrowLeft className='arrow' onClick={(e)=>changePagination(e,+10)} />
-            <AiOutlineArrowRight className='arrow' onClick={(e)=>changePagination(e,-10)} />      
+            <AiOutlineArrowLeft className='arrow' onClick={(e)=>changePagination(e,-10)} />
+            <AiOutlineArrowRight className='arrow' onClick={(e)=>changePagination(e,+10)} />      
             {services.map(e=>{
                 return(
                     <SingleService 

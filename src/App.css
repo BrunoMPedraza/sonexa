@@ -91,6 +91,8 @@
     position:relative;
   }
   .bg-two{
+    transition:.2s;
+    filter:brightness(var(--svg-filter));
     bottom:0;
     position:absolute;
     width:100vw;

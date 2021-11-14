@@ -5,15 +5,18 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:var(--global-bg);
 }
 
 
 :root{
+  --global-bg:white;
   --primary-bg:#DEE8FD;
   --secondary-bg:#455BAF;
   --text-bg:#C6E6F5;
   --white-txt:rgb(255, 255, 255);
   --black-txt:rgb(0, 0, 0);
+  --svg-filter:1;
 
   /* Fonts */
   /* Font Family */
@@ -51,18 +54,21 @@ body {
   pointer-events: none;
 }
 
-.error{
-  position:absolute;
-  top:25em;
-  right:12.5vw;
-  z-index:-15;
-  width:75vw;
+/* This is bad */
 
-}
+  .error{
+    position:absolute;
+    top:25em;
+    right:12.5vw;
+    z-index:-15;
+    width:75vw;
+  }
 
-.chickens{
-  position:absolute;
-  right:0;
-  margin-right:5rem;
-  top:45%;
-}
+  .chickens{
+    position:absolute;
+    right:0;
+    margin-right:5rem;
+    top:45%;
+  }
+
+/* ----------- */

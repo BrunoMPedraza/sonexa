@@ -3,25 +3,39 @@
     position:relative;
     top:3em;
     text-align: end;
-    padding-right:10%;
     background-color: var(--secondary-bg);
     color:var(--white-txt);
-    z-index:-10;
+    z-index:10;
+    padding-top:1rem;
+}
+
+.serviceWelcome{
+    height:15vh;
+    width:100%;
+    background-color:var(--primary-bg);
+    color:var(--black-txt);
+    font-size:var(--fs-sm);
+    border:1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:1rem;
 }
 
 .serviceList{
     background-color:var(--secondary-bg);
     padding:0.4rem;
     margin:auto;
-    border:1px solid black;
+    border-bottom:1px solid black;
 
 }
 
 .listCollection{
     background-color:var(--primary-bg);
     position:relative;
-    margin-top:15em;
+    margin-top:55vh;;
     z-index:1;
+    border-top:1px solid black;
 }
 
 .thumbnail{
@@ -40,3 +54,7 @@
 }
 
 
+.box aside{
+    position:relative;
+    margin-top:35%;
+}

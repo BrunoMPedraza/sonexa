@@ -17,6 +17,7 @@
 }
 
 .bg-one{
+    filter: brightness(var(--svg-filter));
     transition:.4s;
     position:absolute;
     top:0;
@@ -28,6 +29,7 @@
 
 
 .bg-one-active{
+    filter: brightness(var(--svg-filter));
     position:absolute;
     top:0;
     left:0;

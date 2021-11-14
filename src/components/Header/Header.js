@@ -4,8 +4,11 @@ import {FaLowVision,FaBars} from 'react-icons/fa'
 import {IconContext} from 'react-icons'
 import './header.css';
 
+
+
 import {NavBar} from './intern/NavBar';
 import {Title} from './Title'
+import DarkMode from '../DarkMode';
 
 const Header = () => {
     const [clicked,setClicked] = useState(false);
@@ -17,7 +20,8 @@ const Header = () => {
     return (
         <header>
             <IconContext.Provider value={{color:'black'}}>
-
+                <DarkMode  className='darkMode' id='dark'/>
+                
                 <Title/>
                 <div className='navbar'>
                     <Link to='#' className='menu-icons'>

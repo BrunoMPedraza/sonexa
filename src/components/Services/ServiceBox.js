@@ -1,27 +1,31 @@
 import React from 'react'
 import { ServiceProvider } from './intern/ServiceContext';
 import './service.css';
-import {ServiceIteration} from './intern/ServiceIteration'
+import { ServiceIteration } from './intern/ServiceIteration'
+import ServiceWelcome from './ServiceWelcome';
 
 
 const ServiceBox = () => {
     return (
         <section>
             <div className="home-One separator">
-                <div className="col"></div>            
+                <div className="col"></div>
             </div>
-            
+
             <summary>
-                <div className="serviceSlogan">Our Services</div>
+                <div className="serviceSlogan">Our Services
+
+                    <ServiceWelcome />
+                </div>
             </summary>
 
-            
+
             <ServiceProvider>
-                <section className="listCollection">
+                <div className="listCollection">
                     <ServiceIteration />
-                </section>
+                </div>
             </ServiceProvider>
-       
+
         </section>
     )
 }
