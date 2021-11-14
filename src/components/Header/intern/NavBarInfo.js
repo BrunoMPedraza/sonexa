@@ -1,4 +1,3 @@
-import React from 'react';
 import {FaHome,FaUserAlt,FaServer,FaWhatsapp} from 'react-icons/fa'
 
 

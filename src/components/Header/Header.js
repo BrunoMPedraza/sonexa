@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import {Link} from 'react-router-dom';
-import {FaLowVision,FaBars} from 'react-icons/fa'
+import {FaBars} from 'react-icons/fa'
 import {IconContext} from 'react-icons'
 import './header.css';
 
@@ -13,28 +13,27 @@ import DarkMode from '../DarkMode';
 const Header = () => {
     const [clicked,setClicked] = useState(false);
 
-    const showNavBar = () =>{
+    const showNavBar = () => {
+        const title = document.getElementById('title');
         setClicked(!clicked);
+        title.style.setProperty('margin-left', clicked ? '15%' : '25%');
     }
 
     return (
         <header>
             <IconContext.Provider value={{color:'black'}}>
                 <DarkMode  className='darkMode' id='dark'/>
-                
-                <Title/>
                 <div className='navbar'>
                     <Link to='#' className='menu-icons'>
                         <FaBars className={clicked ? 'invisible relevantText transition' : 'faBar relevantText transition'} onClick={showNavBar}/>
                     </Link>
                 </div>
                 <img className={clicked ? 'bg-one-active' : 'bg-one'} src={require('../../images/FirstBG.svg').default} alt="Background colors"/>
-                
                 <NavBar 
                 clicked={clicked} 
                 showNavBar={()=>showNavBar()}
                 />
-            
+                <Title/>
             </IconContext.Provider>
         </header>
     )

@@ -5,6 +5,7 @@
 .adjustable{
     display:flex;
     flex-wrap:wrap;
+    width: 100%;
 }
 
 .adjustable>*{
@@ -22,7 +23,7 @@
 }
 
 .box{
-    width:100vw;
+    width:100%;
     background-color:var(--secondary-bg);
     position:absolute;
     top:50%;
@@ -56,7 +57,6 @@
     white-space: nowrap;
     overflow-x:scroll;
     display: flex;
-    justify-content: center;
     align-items: center;
     /* must fix */
     font-size:var(--fs-lg)

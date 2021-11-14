@@ -1,7 +1,6 @@
 .serviceSlogan{
     font-size:var(--fs-title);
     position:relative;
-    top:3em;
     text-align: end;
     background-color: var(--secondary-bg);
     color:var(--white-txt);
@@ -22,6 +21,43 @@
     margin-right:1rem;
 }
 
+.arrow {
+    margin: 10px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color 500ms linear;
+    transition: color 500ms linear;
+}
+
+.arrow:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color 500ms linear;
+    transition: color 500ms linear;
+}
+
+.pagination-display {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-counter-white{
+    margin-left: 15px;
+    font-size: var(--fs-sm);
+    color: rgba(0, 0, 0, 0.575);
+    font-weight: bold;
+}
+
+.pagination-counter-white-small{
+    font-size: var(--fs-xsm);
+    margin-left: 15px;
+    color: rgba(70, 70, 70, 0.575);
+    font-weight: bold;
+}
+
 .serviceList{
     background-color:var(--secondary-bg);
     padding:0.4rem;
@@ -33,7 +69,6 @@
 .listCollection{
     background-color:var(--primary-bg);
     position:relative;
-    margin-top:55vh;;
     z-index:1;
     border-top:1px solid black;
 }
@@ -54,7 +89,7 @@
 }
 
 
-.box aside{
+.marginRelative{
     position:relative;
     margin-top:35%;
 }

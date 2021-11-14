@@ -16,6 +16,8 @@ const ClientMessage = ({title,body,id}) => {
         : clients.length-1
         : sum
     }
+
+    const capitalizeText = (text )=> (text.replace('-',' ').charAt(0).toUpperCase()+text.slice(1))
     
     const changeId = (e,op) =>{
         e.preventDefault();
@@ -30,7 +32,7 @@ const ClientMessage = ({title,body,id}) => {
             <AiOutlineArrowRight className='arrow' onClick={(e)=>changeId(e,1)} />
             <div className="whitePart">
                 <div className="innerText">
-                    <h2>{title}</h2>
+                    <h2>{capitalizeText(title)}</h2>
                     <h4 className='phrase'>{body}</h4>
                 </div>
             </div>
