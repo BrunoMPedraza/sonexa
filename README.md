@@ -1,8 +1,7 @@
 
 # Introducción
 
-👋 Bienvenidos y bienvenidas a mi proyecto Frontend,
-a continuación procederé a explicar
+👋 Bienvenidos, procederé a explicar
 el funcionamiento de mi aplicación, asi como la forma
 de trabajo que emplee desde un principio y mis métodos
 para conseguir terminarlo en el lapso de
